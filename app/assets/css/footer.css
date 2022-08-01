@@ -1,0 +1,9 @@
+footer {
+  background-color: cornflowerblue;
+  min-height: 100px;
+}
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 376px) {
+}
