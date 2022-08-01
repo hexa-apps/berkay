@@ -7,12 +7,23 @@ body {
   gap: 8px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  user-select: none;
+}
+
 header,
 main,
 footer {
   width: 80%;
   display: inherit;
   flex-direction: inherit;
+  align-items: inherit;
   border-radius: 16px;
 }
 
