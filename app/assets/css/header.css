@@ -5,7 +5,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: orangered;
+  color: #fc867d;
 }
 
 header h1 {
@@ -25,7 +25,7 @@ header button {
 }
 
 header button svg {
-  color: orangered;
+  color: #ffbe66;
 }
 
 @media (max-width: 1280px) {
