@@ -1,0 +1,33 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  height: 200px;
+}
+
+main .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .content h3 {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+main .content p {
+  font-size: 24px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 75%;
+}
+
+@media (max-width: 480px) {
+}

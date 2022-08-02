@@ -1,0 +1,57 @@
+header {
+  padding-right: 16px;
+  padding-left: 16px;
+  color: #111827;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: calc(100% - 32px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+header h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+header .navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+header .navigation .btn-navigation {
+  color: #111827;
+  text-decoration: none;
+  transition: 0.3s;
+  padding: 2px;
+}
+
+header .navigation .btn-navigation:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+header button {
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  transition: 0.3s;
+  padding: 2px;
+}
+
+header button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+header button svg {
+  color: #111827;
+}
+
+@media (max-width: 480px) {
+}
