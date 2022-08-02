@@ -33,7 +33,8 @@ header .navigation .btn-navigation {
 }
 
 header .navigation .btn-navigation:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  color: #fbfefd;
+  background-color: rgba(255, 69, 0, 0.75);
 }
 
 header button {
@@ -46,7 +47,7 @@ header button {
 }
 
 header button:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 69, 0, 0.75);
 }
 
 header button svg {
@@ -54,4 +55,11 @@ header button svg {
 }
 
 @media (max-width: 480px) {
+  header {
+    height: 48px;
+    justify-content: center;
+  }
+  header h3 {
+    display: none;
+  }
 }

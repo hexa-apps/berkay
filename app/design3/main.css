@@ -11,12 +11,15 @@ main .content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 16px;
+  width: 75%;
 }
 
 main .content h3 {
   font-size: 32px;
   margin: 0;
   padding: 0;
+  margin-top: 24px;
   text-align: center;
 }
 
@@ -26,7 +29,26 @@ main .content p {
   margin: 0;
   padding: 0;
   text-align: center;
-  width: 75%;
+  line-height: 32px;
+}
+
+main .content p b {
+  padding: 2px;
+  color: #fbfefd;
+  background-color: rgba(255, 69, 0, 0.75);
+}
+
+main .content #projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main .content #projects h3 {
+  padding: 2px;
+  color: #fbfefd;
+  background-color: rgba(255, 69, 0, 0.75);
 }
 
 @media (max-width: 480px) {
