@@ -1,7 +1,84 @@
 footer {
-  background-color: cornflowerblue;
+  background-color: #111827;
   min-height: 100px;
+  justify-content: space-between;
+  gap: 48px;
+  border-radius: 48px 48px 0 0;
 }
+
+footer p:last-child {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 16px;
+}
+
+footer #contact {
+  width: calc(100% - 96px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 48px;
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+footer #contact .left {
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+footer #contact .left h1 {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+footer #contact .left a {
+  color: white;
+  text-decoration: underline;
+  font-size: larger;
+}
+
+footer #contact .left .social-media-icons {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: flex-start; */
+  gap: 12px;
+}
+
+footer #contact .left .social-media-icons .row {
+  gap: 12px;
+}
+
+footer #contact .left .social-media-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 8px;
+  height: 48px;
+  width: 48px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+footer #contact .right {
+  max-width: 45%;
+}
+
+footer #contact .right img {
+  width: -moz-available; /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+  width: fill-available;
+  border-radius: 8px;
+}
+
 @media (max-width: 1280px) {
 }
 
