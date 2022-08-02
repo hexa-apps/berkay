@@ -10,8 +10,9 @@ footer p:last-child {
   margin: 0;
   padding: 0;
   margin-bottom: 24px;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.5);
   letter-spacing: 16px;
+  text-align: center;
 }
 
 footer #contact {
@@ -46,13 +47,9 @@ footer #contact .left a {
 
 footer #contact .left .social-media-icons {
   display: flex;
-  flex-direction: column;
-  /* align-items: center;
-  justify-content: flex-start; */
-  gap: 12px;
-}
-
-footer #contact .left .social-media-icons .row {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   gap: 12px;
 }
 
@@ -62,8 +59,10 @@ footer #contact .left .social-media-icons a {
   justify-content: center;
   color: white;
   border-radius: 8px;
-  height: 48px;
-  width: 48px;
+  max-height: 48px;
+  max-width: 48px;
+  min-height: 48px;
+  min-width: 48px;
   font-size: 1.5rem;
   text-decoration: none;
 }
@@ -77,9 +76,40 @@ footer #contact .right img {
   width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
   width: fill-available;
   border-radius: 8px;
+  max-height: 250px;
 }
 
 @media (max-width: 1280px) {
+}
+
+@media (max-width: 768px) {
+  footer #contact .left {
+    align-items: center;
+    max-width: none;
+  }
+
+  footer #contact .left h1 {
+    text-align: center;
+  }
+
+  footer #contact .left .social-media-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer #contact .left .social-media-icons a {
+    flex: 1 0 21%;
+  }
+
+  footer #contact .right {
+    display: none;
+  }
+}
+
+@media (max-width: 448px) {
+  footer p:last-child {
+    letter-spacing: 12px;
+  }
 }
 
 @media (max-width: 376px) {
